@@ -1,0 +1,124 @@
+* {
+    /*margin é a distância de fora*/
+    /*padding é o tamanho de dentro*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black ;
+}
+
+header {
+    margin: 40px 0;
+
+    /* margin-left: 1.5rem; */
+    /* margin-top: 1.2rem  */
+}
+
+h1 {
+    text-align: center;
+    color: #dc143c; /* rosa FIAP */
+    font-size: 2.5rem;
+}
+
+.cards {
+    width: 80%;
+    margin: auto;
+
+    display: flex; /* Coloca um elemento ao lado do outro */
+    justify-content: center; 
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 60px;
+     
+    /* border: 1px solid #dc143c;
+    border-radius: 7px; */
+}
+
+.cardItem {
+    width: 30%;
+    height: 500px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+ 
+    text-align: center;
+
+    border: 1px solid #dc143c;    
+    border-radius: 7px;
+
+    /* Ajustes para animação */
+    transition: .5s;
+}
+
+.icon {
+    font-size: 90px;
+    margin-bottom: 30px 0;
+
+    color: #dc143c;
+
+    /* Ajustes para animação */
+    transition: 1s;
+}
+
+.cardItem h2 {
+    margin-bottom: 20px;
+
+    font-size: 40px;
+}
+
+.cardItem p {
+    font-weight: 600;
+
+    margin-bottom: 30px;
+}
+
+.btn {
+    text-decoration: none; /* Para tirar o sublinhado */
+    font-weight: 600;
+
+    border: 2px solid #dc143c;
+    background-color: #dc143c;
+    border-radius: 70px;
+
+    padding: 8px 30px;
+
+    /* Ajustes para animação */
+    transition: 0.5s;
+}
+
+/* Animations */
+
+.btn:hover {
+    background-color: transparent;
+    color: #dc143c;
+}
+
+.cardItem:hover {
+    transform: scale(1.2);
+}
+
+.icon:hover {
+    transform: rotate(360deg);
+}
+
+@media(max-width:1024px){
+    .cardItem {
+        width: 40%;
+    }
+}
+
+
+
